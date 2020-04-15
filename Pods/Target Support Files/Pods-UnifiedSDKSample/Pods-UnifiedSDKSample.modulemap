@@ -1,6 +1,0 @@
-framework module Pods_UnifiedSDKSample {
-  umbrella header "Pods-UnifiedSDKSample-umbrella.h"
-
-  export *
-  module * { export * }
-}
