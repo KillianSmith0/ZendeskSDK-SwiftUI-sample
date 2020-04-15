@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-UnifiedSDKSample/Pods-UnifiedSDKSample-frameworks.sh
+${PODS_ROOT}/ZendeskChatProvidersSDK/ChatProvidersSDK.framework
+${PODS_ROOT}/ZendeskChatSDK/ChatSDK.framework
+${PODS_ROOT}/ZendeskCommonUISDK/CommonUISDK.framework
+${PODS_ROOT}/ZendeskMessagingAPISDK/MessagingAPI.framework
+${PODS_ROOT}/ZendeskMessagingSDK/MessagingSDK.framework
+${PODS_ROOT}/ZendeskSDKConfigurationsSDK/SDKConfigurations.framework
