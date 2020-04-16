@@ -10,15 +10,26 @@ import UIKit
 
 import ChatProvidersSDK
 
+import AnswerBotProvidersSDK
+import SupportProvidersSDK
+import ZendeskCoreSDK
+
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setupZendesk()
+        setupAnswerBot()
+        setupChat()
         return true
     }
 
-    private func setupZendesk(){
+    private func setupAnswerBot() {
+        Zendesk.initialize(appId: <#T##String#>, clientId: <#T##String#>, zendeskUrl: <#T##String#>)
+        Support.initialize(withZendesk: Zendesk.instance!)
+        AnswerBot.initialize(withZendesk: Zendesk.instance!, support: Support.instance!)
+    }
+
+    private func setupChat(){
         Chat.initialize(accountKey: <#String#>)
         Logger.defaultLevel = .verbose // Chat logging
     }
