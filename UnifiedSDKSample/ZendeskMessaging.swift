@@ -8,10 +8,14 @@
 
 import SwiftUI
 
-import MessagingSDK
+import MessagingSDK // Messaging VC
 import CommonUISDK // Styling
 
-import ChatSDK // Engine
+// Engines
+import AnswerBotSDK
+import ChatSDK
+
+// API Config, VisitorInfo, Chat instance.
 import ChatProvidersSDK
 
 struct MessagingView: View {
@@ -53,8 +57,9 @@ struct MessagingController: UIViewControllerRepresentable {
 
     func buildMessagingViewController() throws -> UIViewController {
         let chatEngine = try ChatEngine.engine()
+        let answerBotEngine = try AnswerBotEngine.engine()
 
-        return try Messaging.instance.buildUI(engines: [chatEngine],
+        return try Messaging.instance.buildUI(engines: [answerBotEngine, chatEngine],
                                               configs: [messagingConfiguration, chatConfiguration])
     }
 

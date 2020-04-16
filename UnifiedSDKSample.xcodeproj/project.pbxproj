@@ -393,6 +393,7 @@
 			baseConfigurationReference = 7EEF1A4A3E5C3C2F1D4902EE /* Pods-UnifiedSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"UnifiedSDKSample/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -415,6 +416,7 @@
 			baseConfigurationReference = 55F869FEC2B3BBC3A32B1FA4 /* Pods-UnifiedSDKSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"UnifiedSDKSample/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
